@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fa;
+  color: #162b51;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;              
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;           
+  background-color: #243B73;
+  position: fixed;
+  top: 0;
+  left: 0;                      
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+  max-width: 100%;
+}
+
+#nav-bar {
+  display: flex;
+  flex-wrap: wrap;              
+  gap: 15px;
+  justify-content: flex-end;
+  max-width: 100%;              
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+#hero {
+  padding-top: 100px;
+  text-align: center;
+  padding: 100px 30px 60px;
+  background-color: #FFD93D;
+}
+
+#form {
+  margin-top: 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  max-width: 90%;
+  margin-right: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #FF6B81;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box,
+.pricing-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+@media (max-width: 900px) {     
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #nav-bar {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;        
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .features-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
