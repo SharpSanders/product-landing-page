@@ -1,120 +1,128 @@
 # StreamPro Mic – Product Landing Page
 
-A responsive product landing page for the **StreamPro Mic**, a fictional USB microphone aimed at streamers, podcasters, and creators.  
+A fully responsive single-product landing page for the fictional **StreamPro Mic**, designed for streamers, podcasters, and content creators.
 
-This project showcases layout skills, responsive design, and basic landing-page structure for marketing a single product.
+This project demonstrates structured layout design, marketing-focused content flow, and responsive UI development using semantic HTML and modern CSS.
 
----
+## Live Demo
+https://sharpsanders.github.io/product-landing-page/
 
-## Live Sections
-
-The page is organized into four main sections:
-
-1. **Header / Navigation**
-   - Logo on the left.
-   - Navigation links that scroll to:
-     - `Features`
-     - `How It Works`
-     - `Pricing`
-   - Fixed at the top of the page so it stays visible while scrolling.
-
-2. **Hero**
-   - Bold headline: *“Crystal-Clear Sound for Every Creator”*.
-   - Supporting paragraph describing the mic.
-   - Email signup form:
-     - Email field with placeholder.
-     - “Get Started” submit button.
-     - Form posts to the freeCodeCamp email-submit endpoint.
-
-3. **Features**
-   - Three feature cards:
-     - **Studio Quality** – rich depth and noise-canceling.
-     - **Plug & Play** – simple USB-C connection, no drivers.
-     - **Customizable RGB** – lighting controlled via the app.
-
-4. **How It Works**
-   - Embedded YouTube video (`iframe`) used as a product demo.
-
-5. **Pricing**
-   - Two pricing tiers:
-     - **Starter – $59.99**
-     - **Pro – $129.99**
-   - Each card describes what’s included at that tier.
+<img src="./img/Screenshot-product-landing-page.png" alt="StreamPro Mic Product Landing Page Screenshot" />
 
 ---
 
-## Tech Stack
+## Overview
 
-- **HTML** – semantic structure for header, sections, and pricing content.
-- **CSS** – layout, colors, responsiveness:
-  - Fixed header
-  - Flexbox layout for feature/pricing cards
-  - Responsive nav and video
-- **No JavaScript** is required for this project; it’s a static marketing page.
+The page is structured as a complete marketing funnel for a single product, including:
 
----
+- Fixed navigation
+- Hero section with call-to-action
+- Feature highlights
+- Embedded product demo
+- Pricing tiers
 
-## Layout & Styling Highlights
-
-- Color palette:
-  - Header: deep blue (`#243B73`)
-  - Hero: bright yellow (`#FFD93D`)
-  - CTA: pink button (`#FF6B81`)
-  - Background: light grey (`#f4f6fa`)
-- `header` is fixed with `position: fixed; top: 0; width: 100%;`.
-- `.features-flex` uses `display: flex; flex-wrap: wrap;` for responsive cards.
-- Media query at `max-width: 900px` to:
-  - Stack header items vertically on smaller screens.
-  - Stack feature/pricing cards.
-  - Make the video iframe full-width on mobile.
+The layout is designed to mirror real-world SaaS and hardware product landing pages.
 
 ---
 
-## How to Run
+## Page Sections
 
-1. **Clone the repo:**
+### 1. Header / Navigation
+- Fixed top navigation bar
+- Internal anchor links to page sections
+- Persistent visibility during scroll
 
-   ```bash
-   git clone https://github.com/SharpSanders/product-landing-page.git
-   cd product-landing-page
-Open the page:
+### 2. Hero Section
+- Clear headline and supporting copy
+- Email signup form
+- Call-to-action button
+- Form configured to submit to freeCodeCamp’s test endpoint
 
-Double-click index.html in your file explorer
-or
+### 3. Features
+Three feature cards highlighting:
+- Studio-quality audio
+- Plug-and-play USB-C setup
+- Customizable RGB lighting
 
-Use the Live Server extension in VS Code for auto-reload during edits.
+### 4. How It Works
+- Embedded YouTube video using an `iframe`
+- Responsive scaling for mobile screens
 
-No build step or tooling is required.
+### 5. Pricing
+Two pricing tiers:
+- Starter – $59.99
+- Pro – $129.99
 
-Project Structure
-text
-Copy code
+Card-based layout for clear comparison and hierarchy.
+
+---
+
+## Technical Implementation
+
+### HTML
+- Semantic structure (`header`, `section`, `nav`, etc.)
+- Anchor linking for smooth navigation
+- Accessible form inputs
+
+### CSS
+- Fixed header using `position: fixed`
+- Flexbox layout for feature and pricing cards
+- Responsive video scaling
+- Media queries for mobile breakpoints
+- Custom color palette and CTA styling
+
+No JavaScript is used in this project. The page is intentionally static to focus on layout, responsiveness, and structure.
+
+---
+
+## Layout & Design Highlights
+
+- Clear visual hierarchy
+- Marketing-style hero section
+- Card-based layout system
+- Mobile-first responsiveness
+- Flexible content sections ready for future enhancements
+
+---
+
+## Project Structure
+
+```txt
 product-landing-page/
-├── index.html   # Markup for header, hero, features, video, pricing
-└── styles.css   # Layout, colors, typography, responsiveness
-If you add assets locally (like the logo file) they should live in an img/ folder referenced by #header-img.
+  index.html
+  styles.css
+  img/
+    Screenshot-product-landing-page.png
+Run Locally
+Clone the repository
+git clone https://github.com/SharpSanders/product-landing-page.git
+
+Open index.html in your browser
+
+No build tools or dependencies required.
 
 What I Practiced
-Building a single-product marketing page.
+Structuring a single-product marketing page
 
-Using a fixed navigation bar that links to page sections.
+Designing fixed navigation with internal anchors
 
-Designing responsive card-based layouts with Flexbox.
+Building responsive card layouts using Flexbox
 
-Embedding a YouTube video via iframe.
+Embedding media content responsively
 
-Structuring content clearly for future JavaScript enhancements (forms, analytics, etc.).
+Creating scalable layout foundations for future JS integration
 
-Future Improvements
-Add smooth-scrolling behavior for nav links.
+Potential Enhancements
+Smooth scrolling for anchor links
 
-Add hover/focus styles for pricing cards and CTA buttons.
+Improved hover and focus states
 
-Connect the email form to a real backend or mailing list provider.
+Backend integration for email collection
 
-Add more detailed FAQ and testimonials sections.
+Accessibility improvements (skip links, ARIA landmarks)
 
-Improve accessibility (skip links, ARIA landmarks, etc.).
+Testimonials and FAQ section
 
 Author
-Created by Trevyn Sanders.
+Trevyn Sanders
+Better Endeavors LLC
